@@ -1,3 +1,6 @@
+before_install:
+- echo -e "machine git.smarpsocial.com\n  login truongsinh\n  password $CI_USER_PASSWORD" >> ~/.netrc
+
 language: objective-c  #1
 osx_image: xcode6.4 #2
 xcode_project: MovingHelper.xcodeproj #3
