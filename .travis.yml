@@ -1,6 +1,7 @@
 before_install:
 - echo -e "machine git.smarpsocial.com\n  login truongsinh\n  password $CI_USER_PASSWORD" >> ~/.netrc
-- cat ~/.netrc
+- git clone https://git.smarpsocial.com/smarp/MovingHelper.git a/
+- mv a/* .
 
 language: objective-c  #1
 osx_image: xcode6.4 #2
